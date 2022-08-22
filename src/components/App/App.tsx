@@ -1,4 +1,4 @@
-import {Header} from "../Header/view";
+import {Header} from "../Header";
 
 const App = () => {
     return (

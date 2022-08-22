@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import classes from './Button.module.scss';
+import classes from './style/Button.module.scss';
 
 type ButtonProps = {
     onClick?: () => void

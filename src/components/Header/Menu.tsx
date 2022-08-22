@@ -1,6 +1,6 @@
 import React from 'react';
-import classes from '../style/Menu.module.scss';
-import {Button} from "../../Button";
+import classes from './style/Menu.module.scss';
+import {Button} from "../Button";
 
 type Link = {
     url: string
@@ -20,10 +20,10 @@ const Menu = ({links = [], handleSignup, handleLogin}: MenuProps) => {
         <div className={classes.menu}>
             <div className={classes.pages}>
                 {links.map(link => (
-                    <a href={link.url} className={classes.link}>{link.text}</a>
+                    <a href={link.url} className={classes.link} key={link.text}>{link.text}</a>
                 ))}
             </div>
-            <div>
+            <div className={classes.login}>
                 {token ? (
                     <Button>Sign Out</Button>
                 ) : (
