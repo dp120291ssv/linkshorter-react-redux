@@ -1,0 +1,18 @@
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 2rem 1.5rem
+}
+
+.logo {
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.burger {
+    margin-left: auto;
+    font-size: 1.75rem;
+    color: var(--gray-300);
+    cursor: pointer;
+}

@@ -1,9 +1,11 @@
-function App() {
-  return (
-    <div>
-     INITIAL CONTENT
-    </div>
-  );
-}
+import {Header} from "../Header/view";
+
+const App = () => {
+    return (
+        <>
+            <Header/>
+        </>
+    );
+};
 
 export {App};
