@@ -10,15 +10,9 @@ type ButtonProps = {
 }
 
 export const Button = ({onClick, variant = '', size = 'medium', type = 'button', children}: ButtonProps) => {
-    const mainCn = cn(
-        classes.button,
-        classes[size],
-        classes[variant],
-    );
-
     return (
         <button
-            className={mainCn}
+            className={cn(classes.button, classes[size], classes[variant])}
             type={type}
             onClick={onClick}
         >
