@@ -13,6 +13,7 @@
   --gray-600: hsl(255, 11%, 22%);
   --gray-900: hsl(260, 8%, 14%);
   --bg-light: hsl(225, 33%, 95%);
+  --bg-white: #fff;
 
   /* font */
   --family: 'Poppins', sans-serif;
