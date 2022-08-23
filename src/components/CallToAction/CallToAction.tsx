@@ -1,0 +1,15 @@
+import React from 'react';
+import classes from './style/CallToAction.module.scss';
+import {Button} from "../Button";
+
+
+const CallToAction = () => {
+    return (
+        <section className={classes.CallToAction}>
+            <h2>Boost your links today</h2>
+            <Button>Get Started</Button>
+        </section>
+    );
+};
+
+export {CallToAction};
