@@ -8,6 +8,7 @@ import useToggle from "../../hooks/usetoogle";
 import Menu from "./Menu";
 import {AnimatePresence, motion} from "framer-motion";
 import {Modal} from "../Modal";
+import {SignIn, SignUp} from "../SignUp";
 
 const Header = () => {
     const [mobile] = useMatchMedia(queries);
@@ -44,11 +45,11 @@ const Header = () => {
             </header>
 
             <Modal open={isSignupOpen} handleClose={onSignUp} title="Sign Up">
-                <>Sign Up</>
+                <SignUp closeModal={onSignUp}/>
             </Modal>
 
             <Modal open={isLoginOpen} handleClose={onLogin} title="Sign In">
-                <>Login</>
+                <SignIn closeModal={onLogin}/>
             </Modal>
         </>
     );
