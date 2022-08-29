@@ -3,7 +3,7 @@ import {Button} from "../Button";
 import {useSelector} from "react-redux";
 import {selectLinks} from "../../store/slice/linkSlice";
 import {motion, AnimatePresence} from "framer-motion";
-import {SetStateAction, useState} from "react";
+import {useState} from "react";
 
 type LinkProps = {
     code: string
