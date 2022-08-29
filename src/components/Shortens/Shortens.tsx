@@ -1,16 +1,23 @@
 import classes from './Shortens.module.scss';
 import {Button} from "../Button";
+import {useSelector} from "react-redux";
+import {selectLinks} from "../../store/slice/linkSlice";
 
+type LinkProps = {
+    code: string
+    original_link: string
+    full_short_link2: string
+}
 
 const Shortens = () => {
-    const links: any[] = [];
+    const links = useSelector(selectLinks);
 
     if (!links?.length) return null;
 
     return (
         <section className={classes.Shortens}>
             <div className='container'>
-                {links.map(item => (
+                {links.map((item: LinkProps) => (
                     <div
                         key={item.code}
                         className={classes.item}
