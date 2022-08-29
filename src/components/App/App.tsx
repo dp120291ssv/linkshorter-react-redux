@@ -4,6 +4,7 @@ import {Form} from "../Form";
 import {Features} from "../Features";
 import {CallToAction} from "../CallToAction";
 import {Footer} from "../Footer";
+import {Shortens} from "../Shortens";
 
 const App = () => {
     return (
@@ -11,6 +12,7 @@ const App = () => {
             <Header/>
             <Hero/>
             <Form/>
+            <Shortens/>
             <Features/>
             <CallToAction/>
             <Footer/>

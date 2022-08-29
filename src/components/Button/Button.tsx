@@ -7,6 +7,7 @@ type ButtonProps = {
     size?: string
     type?: "button" | "submit" | "reset" | undefined
     children?: any
+    disabled?: boolean
 }
 
 export const Button = ({onClick, variant = '', size = 'medium', type = 'button', children}: ButtonProps) => {
